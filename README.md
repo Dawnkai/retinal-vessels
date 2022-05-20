@@ -4,6 +4,9 @@ This repository contains three popular approaches for detecting Retinal Vessels:
 2. Classifiers
 3. Deep Neural Network
 
+The `Deep Neural Network` approach used can be found [here](https://github.com/nikhilroxtomar/Retina-Blood-Vessel-Segmentation-in-PyTorch), it also
+has video tutorial [here](https://www.youtube.com/watch?v=T0BiFBaMLDQ). I won't be placing the copy here because that would be stealing.
+
 ## Short description
 For those that do not want to spend time viewing this implementation here is a quick rundown on how each approach is made:
 1. Image manipulation
