@@ -44,11 +44,11 @@ For those that do not want to spend time viewing this implementation here is a q
 * [operator](https://pypi.org/project/pyoperators/)
 
 ## Results
-You can see the results in the notebooks, but here is a quick preview of all approaches:
+You can see the results in the notebooks, but here is a quick preview of all approaches (left is prediction, right is result):
 
 ### Image manipulation
-![alt text](https://github.com/Dawnkai/computed-tomography/blob/main/morphology.png)
+![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/morphology.png)
 ### Classifiers
-![alt text](https://github.com/Dawnkai/computed-tomography/blob/main/knn.png)
+![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/knn.png)
 ### Deep Neural Network
-![alt text](https://github.com/Dawnkai/computed-tomography/blob/main/dnn.png)
+![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/dnn.png)
