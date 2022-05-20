@@ -4,9 +4,6 @@ This repository contains three popular approaches for detecting Retinal Vessels:
 2. Classifiers
 3. Deep Neural Network
 
-Each solution has its own folder where you will find Jupyter Notebooks with descriptions of how each approach has been developed and `.html` files for people who cannot view
-it with Jupyter.
-
 ## Short description
 For those that do not want to spend time viewing this implementation here is a quick rundown on how each approach is made:
 1. Image manipulation
@@ -44,11 +41,49 @@ For those that do not want to spend time viewing this implementation here is a q
 * [operator](https://pypi.org/project/pyoperators/)
 
 ## Results
-You can see the results in the notebooks, but here is a quick preview of all approaches (left is prediction, right is result):
+
+The following measures were calculated for all approaches based on their results for images in `images` folder:
+* Accuracy : (`TP` + `TN`) / (`TP` + `TN` + `FP` + `FN`) 
+* Sensitivity : `TP` / (`TP` + `FN`) 
+* Specificity : `TN` / (`TN` + `FP`) 
+* Balanced Accuracy : (Sensitivity + Specificity) / 2 
+
+Where:
+`TP` - True Positive
+`TN` - True Negative
+`FP` - False Positive
+`FN` - False Negative
+
+All calculated by comparing every pixel of input and output image.
+
+Below the metrics you can see example image result (left is expected result, right is actual result).
 
 ### Image manipulation
+| Image name | Accuracy | Sensitivity | Specificity | Balanced Accuracy |
+|:----------:|:--------:|:-----------:|:-----------:|:-----------------:|
+|  11_dr.jpg |    93%   |     53%     |     98%     |        75%        |
+|  11_g.jpg  |    93%   |     53%     |     98%     |        76%        |
+|  11_h.jpg  |    94%   |     55%     |     98%     |        77%        |
+|  12_dr.JPG |    93%   |     48%     |     98%     |        73%        |
+|  12_g.jpg  |    93%   |     59%     |     97%     |        78%        |
+
 ![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/morphology.png)
 ### Classifiers
+| Image name | Accuracy | Sensitivity | Specificity | Balanced Accuracy |
+|:----------:|:--------:|:-----------:|:-----------:|:-----------------:|
+|  11_dr.jpg |    94%   |     68%     |     96%     |        82%        |
+|  11_g.jpg  |    94%   |     71%     |     95%     |        83%        |
+|  11_h.jpg  |    94%   |     75%     |     95%     |        85%        |
+|  12_dr.JPG |    94%   |     65%     |     95%     |        80%        |
+|  12_g.jpg  |    93%   |     76%     |     94%     |        85%        |
+
 ![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/knn.png)
 ### Deep Neural Network
+| Image name | Accuracy | Sensitivity | Specificity | Balanced Accuracy |
+|:----------:|:--------:|:-----------:|:-----------:|:-----------------:|
+|  11_dr.jpg |    95%   |     86%     |     96%     |        91%        |
+|  11_g.jpg  |    96%   |     85%     |     97%     |        91%        |
+|  11_h.jpg  |    96%   |     86%     |     97%     |        92%        |
+|  12_dr.JPG |    96%   |     71%     |     98%     |        85%        |
+|  12_g.jpg  |    96%   |     85%     |     97%     |        91%        |
 ![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/dnn.png)
