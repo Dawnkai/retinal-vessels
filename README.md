@@ -86,4 +86,5 @@ Below the metrics you can see example image result (left is expected result, rig
 |  11_h.jpg  |    96%   |     86%     |     97%     |        92%        |
 |  12_dr.JPG |    96%   |     71%     |     98%     |        85%        |
 |  12_g.jpg  |    96%   |     85%     |     97%     |        91%        |
+
 ![alt text](https://github.com/Dawnkai/retinal-vessels/blob/master/dnn.png)
